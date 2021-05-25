@@ -244,11 +244,7 @@ $(document).ready(function() {
     })
 
 
-    $(window).resize(function() {
-        if ($(window).width() < 767) {
-            $(".card__drop--calendar2").show()
-        }
-    })
+
 
 
 
