@@ -68,10 +68,16 @@ $(document).ready(function() {
 
     // Клик на карточку календаря + модальное окно
     $(".calendar__card").click(function() {
-        $(".calendar__card").removeClass("calendar__card--active")
-        $(this).addClass("calendar__card--active");
-        $(".calendar__drop").show(300);
-        $(".modal-bg").show();
+        if ($(window).width() > 768) {
+            $(".calendar__card").removeClass("calendar__card--active")
+            $(this).addClass("calendar__card--active");
+            $(".calendar__drop").show(300);
+            $(".modal-bg").show();
+        } else {
+            $(".calendar__drop--mob").show(300);
+            $(".modal-bg").show();
+        }
+
     })
 
 
@@ -226,6 +232,7 @@ $(document).ready(function() {
             $(".modal-bg").hide();
             $(".card__drop--calendar").hide(200);
             $(".calendar__drop").hide(200);
+            $(".calendar__drop--mob").hide(200);
         })
         // 
     $(".calendar-card__detail").click(function() {

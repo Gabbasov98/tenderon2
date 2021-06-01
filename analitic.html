@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Аналитика</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/libs/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.scrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light-theme.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- header-->
+        <header class="header" id="header">
+            <div class="header__top">
+                <div class="wrapper">
+                    <a class="header__logo" href="home.html">
+                        <img src="img/logo1.png" alt="">
+                    </a>
+                    <!-- menu-->
+                    <div class="js-menu menu menu--right">
+                        <div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul class="menu__list">
+                                <li><a class="active" href="#">Поиск</a></li>
+                                <li><a href="#">Учавстчвую</a></li>
+                                <li><a href="#">Аналитика</a></li>
+                            </ul>
+                            <div class="menu__close" id="menu-close"></div>
+                        </nav>
+                        <div class="menu__over" id="menu-over"></div>
+                    </div>
+                    <!-- /menu-->
+                    <!-- user-->
+                    <div class="user">
+                        <a class="user__notify active" href="#">
+                            <img src="img/bell.svg" alt=""></a>
+                        <div class="user__login"><img src="img/user.svg" alt=""><span>Никнейм</span>
+                            <div class="user__arrow"> <img src="img/arrow.svg" alt=""></div>
+                            <div class="user__drop">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="user__drop-icon"><img src="img/user.svg" alt=""></div><span>Профиль</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="user__drop-icon"><img src="img/flag.svg" alt=""></div><span>Избранное</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="user__drop-icon"><img src="img/out.svg" alt=""></div><span>Выход</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <!--	/user-->
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="wrapper">
+                    <!-- menu-->
+                    <div class="js-menu menu menu--right">
+                        <div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                        <nav class="menu__nav">
+                            <ul class="menu__list menu__list--b">
+                                <li><a class="active" href="#">Текущие</a></li>
+                                <li><a href="#">Контракт</a></li>
+                                <li><a href="#">Архивные</a></li>
+                                <li><a href="#">Журнал</a></li>
+                            </ul>
+                            <div class="menu__close" id="menu-close"></div>
+                        </nav>
+                        <div class="menu__over" id="menu-over"></div>
+                    </div>
+                    <!-- /menu-->
+                </div>
+            </div>
+        </header>
+        <!-- /header-->
+        <div class="content">
+            <div class="sidebar__close">
+                <div class="wrapper">
+                    <div class="sidebar__close-inner">
+                        <span>Фильтры</span>
+                        <button>
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L10.5 12" stroke="#31456A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11 1.5L1.5 12" stroke="#31456A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="wrapper">
+
+
+                <!--	/select-filters-->
+                <div class="main-sidebar">
+                    <main class="main">
+                        <div class="main__body">
+                            <form class="sort" action="">
+
+                                <div class="sort__select">
+
+                                    <button type="button" class="sort__file-filter sort__file-filter--mob">Фильтры</button>
+                                    <!-- <a class="sort__file-mob" data-id="#sortDrop" href="#"> <img src="img/sort.svg" alt=""></a> -->
+                                </div>
+                            </form>
+
+                            <div class="analitic">
+                                <div class="analitic__top">
+                                    <div class="analitic__top-row">
+                                        <div class="analitic__top-item">
+                                            <p>13,3 млн ₽ </p>
+                                            <p>Общая сумма 7 500 тендеров</p>
+                                        </div>
+                                        <div class="analitic__top-item">
+                                            <p>8930 </p>
+                                            <p>Актуальных</p>
+                                        </div>
+                                        <div class="analitic__top-item">
+                                            <p>3930 </p>
+                                            <p>Завершенных</p>
+                                        </div>
+                                        <div class="analitic__top-item">
+                                            <p>920 000 ₽ </p>
+                                            <p>Средняя цена</p>
+                                        </div>
+                                        <div class="analitic__top-item">
+                                            <p>13 </p>
+                                            <p> Постоянных поставщиков
+                                        </div>
+                                        <div class="analitic__top-item">
+                                            <p>1 262 </p>
+                                            <p>Постоянных заказчиков</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="analitic__top-row"></div> -->
+                                </div>
+                                <div class="analitic__body">
+                                    <div class="analitic__body-row">
+                                        <div class="analitic__body-chart1 chart1">
+                                            <p class="chart1__title"><span>График</span> <span>круговой</span></p>
+                                            <div class="chart1__body">
+
+                                            </div>
+                                            <div class="chart1__footer">
+                                                <div class="chart1__item">
+                                                    <span></span>
+                                                    <span>Показатели “1”</span>
+                                                </div>
+                                                <div class="chart1__item">
+                                                    <span></span>
+                                                    <span>Показатель</span>
+                                                </div>
+                                                <div class="chart1__item">
+                                                    <span></span>
+                                                    <span>Показатель</span>
+                                                </div>
+                                                <div class="chart1__item">
+                                                    <span></span>
+                                                    <span>Показатели “1”</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="analitic__body-chart2 chart2">
+                                            <div class="chart2__top">
+                                                <div class="chart2__top-item chart2__top-item--active" data-tabs-path="1">По количеству</div>
+                                                <div class="chart2__top-item" data-tabs-path="2">По сумме</div>
+                                            </div>
+                                            <div class="chart2__body">
+                                                <div class="chart2__body-top">
+                                                    <div class="chart2__body-nums">
+                                                        <div class="chart2__body-nums-item">600</div>
+                                                        <div class="chart2__body-nums-item">500</div>
+                                                        <div class="chart2__body-nums-item">400</div>
+                                                        <div class="chart2__body-nums-item">300</div>
+                                                        <div class="chart2__body-nums-item">200</div>
+                                                        <div class="chart2__body-nums-item">100</div>
+                                                    </div>
+                                                    <div class="chart2__body-line">
+                                                        <div class="chart2__body-line-item"></div>
+                                                        <div class="chart2__body-line-item"></div>
+                                                        <div class="chart2__body-line-item"></div>
+                                                        <div class="chart2__body-line-item"></div>
+                                                        <div class="chart2__body-line-item"></div>
+                                                        <div class="chart2__body-line-item"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="chart2__body-bottom">
+                                                    <div class="chart2__body-month">Янв</div>
+                                                    <div class="chart2__body-month">Фев</div>
+                                                    <div class="chart2__body-month">Мар</div>
+                                                    <div class="chart2__body-month">Апр</div>
+                                                    <div class="chart2__body-month">Май</div>
+                                                    <div class="chart2__body-month">Июн</div>
+                                                    <div class="chart2__body-month">Июл</div>
+                                                    <div class="chart2__body-month">Авг</div>
+                                                    <div class="chart2__body-month">Сен</div>
+                                                    <div class="chart2__body-month">Окт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analitic__body-row chart-group">
+                                        <div class="analitic__body-chart3 chart3">
+                                            <p class="chart3__title">График #3</p>
+                                            <div class="chart3__body">
+                                                <div class="chart3__graph">
+
+                                                </div>
+                                                <div class="chart3__info">
+                                                    <div class="chart3__item">
+                                                        <span></span>
+                                                        <span>Показатели “1”</span>
+                                                    </div>
+                                                    <div class="chart3__item">
+                                                        <span></span>
+                                                        <span>Показатель</span>
+                                                    </div>
+                                                    <div class="chart3__item">
+                                                        <span></span>
+                                                        <span>Показатель</span>
+                                                    </div>
+                                                    <div class="chart3__item">
+                                                        <span></span>
+                                                        <span>Показатели “1”</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="analitic__body-chart4 chart4">
+
+                                            <div class="chart4__body">
+                                                <div class="chart4__body-top">
+                                                    <div class="chart4__body-nums">
+                                                        <div class="chart4__body-nums-item">600</div>
+                                                        <div class="chart4__body-nums-item">500</div>
+                                                        <div class="chart4__body-nums-item">400</div>
+                                                        <div class="chart4__body-nums-item">300</div>
+                                                        <div class="chart4__body-nums-item">200</div>
+                                                        <div class="chart4__body-nums-item">100</div>
+                                                    </div>
+                                                    <div class="chart4__body-line">
+                                                        <div class="chart4__body-line-item"></div>
+                                                        <div class="chart4__body-line-item"></div>
+                                                        <div class="chart4__body-line-item"></div>
+                                                        <div class="chart4__body-line-item"></div>
+                                                        <div class="chart4__body-line-item"></div>
+                                                        <div class="chart4__body-line-item"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="chart4__body-bottom">
+                                                    <div class="chart4__body-month">Янв</div>
+                                                    <div class="chart4__body-month">Фев</div>
+                                                    <div class="chart4__body-month">Мар</div>
+                                                    <div class="chart4__body-month">Апр</div>
+                                                    <div class="chart4__body-month">Май</div>
+                                                    <div class="chart4__body-month">Июн</div>
+                                                    <div class="chart4__body-month">Июл</div>
+                                                    <div class="chart4__body-month">Авг</div>
+                                                    <div class="chart4__body-month">Сен</div>
+                                                    <div class="chart4__body-month">Окт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </main>
+
+
+
+
+                    <aside class="sidebar ">
+
+                        <!-- filters-->
+                        <form class="filters" action="">
+                            <div class="filters__block filters__block--analitic">
+
+                                <div class="filters__row">
+                                    <div class="subtitle">Период бюджета</div>
+                                    <div class="filters__periods">
+                                        <div class="filters__period">Все время</div>
+                                        <div class="filters__period filters__period--active">Месяц</div>
+                                        <div class="filters__period">Квартал</div>
+                                        <div class="filters__period">Год</div>
+                                    </div>
+
+                                    <div class="filters__flex">
+                                        <div class="filters__date">
+                                            <input class="js-datepicker" id="date_1" type="text" autocomplete="off">
+                                            <label for="date_1"></label>
+                                        </div><span class="filters__dash"></span>
+                                        <div class="filters__date">
+                                            <input class="js-datepicker" id="date_2" type="text" autocomplete="off">
+                                            <label for="date_2"> </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filters__options filters__options--analitic">
+                                    <div class="filters__row filters__row--pb15">
+                                        <div class="filters__dropbtn">
+                                            <div class="subtitle">Локация</div>
+                                            <div class="filters__plus js-drop-click" data-id="#filter_1"></div>
+                                            <div class="filters__drop" id="filter_1">
+                                                <div class="filters__drop-container">
+                                                    <div class="filters__drop-scrollbar scrollbar-inner">
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_1" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_1"> </label>
+                                                            <label class="filters__radio2-text" for="variant_1">Вариант 1</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_2" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_2"> </label>
+                                                            <label class="filters__radio2-text" for="variant_2">Вариант 2</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_3" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_3"> </label>
+                                                            <label class="filters__radio2-text" for="variant_3">Вариант 3</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_4" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_4"> </label>
+                                                            <label class="filters__radio2-text" for="variant_4">Вариант 4</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filters__row filters__row--pb15">
+                                        <div class="filters__dropbtn">
+                                            <div class="subtitle">Отрасли</div>
+                                            <div class="filters__plus js-drop-click" data-id="#filter_2"></div>
+                                            <div class="filters__drop" id="filter_2">
+                                                <div class="filters__drop-container">
+                                                    <div class="filters__drop-scrollbar scrollbar-inner">
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_5" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_5"> </label>
+                                                            <label class="filters__radio2-text" for="variant_5">Вариант 1</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_6" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_6"> </label>
+                                                            <label class="filters__radio2-text" for="variant_6">Вариант 2</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_7" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_7"> </label>
+                                                            <label class="filters__radio2-text" for="variant_7">Вариант 3</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_8" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_8"> </label>
+                                                            <label class="filters__radio2-text" for="variant_8">Вариант 4</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filters__row filters__row--pb15">
+                                        <div class="filters__dropbtn">
+                                            <div class="subtitle">Направление</div>
+                                            <div class="filters__plus js-drop-click" data-id="#filter_3"></div>
+                                            <div class="filters__drop" id="filter_3">
+                                                <div class="filters__drop-container">
+                                                    <div class="filters__drop-scrollbar scrollbar-inner">
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_9" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_9"> </label>
+                                                            <label class="filters__radio2-text" for="variant_9">Вариант 1</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_10" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_10"> </label>
+                                                            <label class="filters__radio2-text" for="variant_10">Вариант 2</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_11" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_11"> </label>
+                                                            <label class="filters__radio2-text" for="variant_11">Вариант 3</label>
+                                                        </div>
+                                                        <div class="filters__radio2">
+                                                            <input id="variant_12" type="radio" name="variant">
+                                                            <label class="filters__radio2-circle" for="variant_12"> </label>
+                                                            <label class="filters__radio2-text" for="variant_12">Вариант 4</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="filter__variants">
+                                <div class="filter__variant">Здравоохранение</div>
+                                <div class="filter__variant">Образование</div>
+                                <div class="filter__variant">Социальное</div>
+                            </div>
+                            <div class="filter__btn-group">
+                                <button class="btn" type="submit">Применить <span class="btn-mob-hide">фильтры</span> </button>
+                                <div class="btn btn--2">Сбросить <span class="btn-mob-hide">фильтры</span> </div>
+                                <div class="btn btn--2 save__filter">Cохранить фильтр</div>
+                            </div>
+
+                        </form>
+                        <!--	/filters-->
+                    </aside>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="main__footer-mob footer">
+            <div class="user__drop">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="user__drop-icon"><img src="img/user.svg" alt=""></div><span>Профиль</span></a>
+                        <button class="user__drop-arrow">
+                            <img src="img/arrow-right.svg" alt="">
+                        </button>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="user__drop-icon"><img src="img/flag.svg" alt=""></div><span>Избранное</span></a>
+                        <button class="user__drop-arrow">
+                                <img src="img/arrow-right.svg" alt="">
+                            </button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="user__drop-icon"><img src="img/out.svg" alt=""></div><span>Выход</span></a>
+                        <button class="user__drop-arrow">
+                                <img src="img/arrow-right.svg" alt="">
+                            </button>
+                    </li>
+                </ul>
+            </div>
+            <button class="main__footer-mob-btn">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 23">
+					<defs>
+					  <style>
+						.a {
+						  fill: #31456a;
+						  fill-rule: evenodd;
+						}
+					  </style>
+					</defs>
+					<title>Поиск</title>
+					<path class="a" d="M2.7,10.2a7.9,7.9,0,0,1,8.1-7.7,8,8,0,0,1,8.1,7.7,7.3,7.3,0,0,1-2.4,5.4,8.1,8.1,0,0,1-5.6,2.3A7.9,7.9,0,0,1,2.7,10.2ZM23.6,20.8l-4.5-4.5a9.7,9.7,0,0,0,2.2-6.1A10.4,10.4,0,0,0,10.7,0,10.4,10.4,0,0,0,0,10.2a10.6,10.6,0,0,0,17,8l4.6,4.4a1.4,1.4,0,0,0,1.9,0A1.1,1.1,0,0,0,23.6,20.8Z"/>
+				  </svg>
+			</button>
+            <button class="main__footer-mob-btn">
+				<svg width="24" height="21" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.8109 7.51573C18.8109 7.88675 18.5115 8.18484 18.1455 8.18484C17.7794 8.18484 17.48 7.88675 17.48 7.51573C17.48 7.1447 17.7794 6.84662 18.1455 6.84662C18.5115 6.84662 18.8109 7.14471 18.8109 7.51573Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M12.8192 7.68266C12.8192 8.05368 12.5198 8.35177 12.1538 8.35177C11.7878 8.35177 11.4883 8.05368 11.4883 7.68266C11.4883 7.31164 11.7878 7.01355 12.1538 7.01355C12.5198 7.01355 12.8192 7.31164 12.8192 7.68266Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M6.65589 7.51573C6.65589 7.88675 6.35648 8.18484 5.99045 8.18484C5.62442 8.18484 5.32501 7.88675 5.32501 7.51573C5.32501 7.1447 5.62442 6.84662 5.99045 6.84662C6.35648 6.84662 6.65589 7.14471 6.65589 7.51573Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M18.8109 11.6911C18.8109 12.0622 18.5115 12.3603 18.1455 12.3603C17.7794 12.3603 17.48 12.0622 17.48 11.6911C17.48 11.3201 17.7794 11.022 18.1455 11.022C18.5115 11.022 18.8109 11.3201 18.8109 11.6911Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M18.312 16.5358H18.2502L18.1903 16.5508C18.0614 16.5832 17.895 16.5438 17.7347 16.3963C17.5723 16.247 17.48 16.0409 17.48 15.8667C17.48 15.4733 17.7571 15.1976 18.1455 15.1976C18.301 15.1976 18.4602 15.2743 18.5933 15.4346C18.7286 15.5975 18.8109 15.8191 18.8109 16.0337C18.8109 16.1222 18.7618 16.2521 18.6446 16.3696C18.5273 16.4873 18.3985 16.5358 18.312 16.5358Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M12.8192 11.6911C12.8192 12.0622 12.5198 12.3603 12.1538 12.3603C11.7878 12.3603 11.4883 12.0622 11.4883 11.6911C11.4883 11.3201 11.7878 11.022 12.1538 11.022C12.5198 11.022 12.8192 11.3201 12.8192 11.6911Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M12.8192 15.8667C12.8192 16.2377 12.5198 16.5358 12.1538 16.5358C11.7878 16.5358 11.4883 16.2377 11.4883 15.8667C11.4883 15.4957 11.7878 15.1976 12.1538 15.1976C12.5198 15.1976 12.8192 15.4957 12.8192 15.8667Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M6.65589 11.6911C6.65589 12.0622 6.35648 12.3603 5.99045 12.3603C5.62442 12.3603 5.32501 12.0622 5.32501 11.6911C5.32501 11.3201 5.62442 11.022 5.99045 11.022C6.35648 11.022 6.65589 11.3201 6.65589 11.6911Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M6.65589 15.8667C6.65589 16.2377 6.35648 16.5358 5.99045 16.5358C5.62442 16.5358 5.32501 16.2377 5.32501 15.8667C5.32501 15.4957 5.62442 15.1976 5.99045 15.1976C6.35648 15.1976 6.65589 15.4957 6.65589 15.8667Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M4.75417 2.49564L4.78783 2.48931L4.82031 2.47845C4.85935 2.4654 4.92687 2.46519 5.01576 2.54446C5.10941 2.62796 5.1607 2.74758 5.1607 2.83933C5.1607 3.04062 5.12619 3.14419 5.09064 3.20124C5.06332 3.2451 5.00953 3.3039 4.86562 3.3569C2.83365 3.74556 1.3314 5.43352 1.3314 7.51577V15.6995C1.3314 17.9784 3.21869 19.8739 5.49421 19.8739H18.8135C21.089 19.8739 22.9763 17.9784 22.9763 15.6995V7.51577C22.9763 5.43318 21.4736 3.74501 19.4411 3.35671C19.1341 3.24704 19.0107 3.0912 18.9856 2.91326C19.101 2.62504 19.2609 2.51907 19.4392 2.50573C21.85 2.98464 23.6412 5.11091 23.6412 7.51577V15.6995V15.7271L23.6442 15.7546C23.9398 18.4228 21.7227 20.711 18.8135 20.711H5.49421C2.77499 20.711 0.5 18.4311 0.5 15.6995V7.51577C0.5 5.09359 2.31714 2.95402 4.75417 2.49564Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M13.6508 3.34134H10.6539C10.587 3.34134 10.5153 3.31174 10.4455 3.22182C10.3716 3.12651 10.3215 2.98524 10.3215 2.83925C10.3215 2.75079 10.3706 2.62087 10.4878 2.50331C10.605 2.38565 10.7339 2.33716 10.8204 2.33716H13.8173C13.9038 2.33716 14.0326 2.38565 14.1499 2.50331C14.2671 2.62087 14.3162 2.75079 14.3162 2.83925C14.3162 2.87583 14.2778 2.99866 14.1036 3.1417C13.936 3.27924 13.7531 3.34134 13.6508 3.34134Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M7.82506 5.01151C7.73849 5.01151 7.60968 4.96302 7.49239 4.84536C7.3752 4.7278 7.32611 4.59788 7.32611 4.50942V1.00209C7.32611 0.857681 7.37468 0.729836 7.45007 0.644752C7.51721 0.568987 7.6283 0.5 7.82506 0.5C7.89202 0.5 7.96373 0.529602 8.03344 0.619523C8.10734 0.714831 8.15751 0.856107 8.15751 1.00209V4.67643C8.15751 4.8138 8.11401 4.88921 8.07448 4.92887C8.03509 4.96838 7.9607 5.01151 7.82506 5.01151Z" fill="#31456A" stroke="#31456A"/>
+					<path d="M16.6473 5.01151C16.5607 5.01151 16.4319 4.96302 16.3146 4.84536C16.1974 4.7278 16.1483 4.59788 16.1483 4.50942V1.08738C16.2154 0.907515 16.3022 0.751909 16.3971 0.644752C16.5008 0.527789 16.5827 0.5 16.6473 0.5C16.7338 0.5 16.8626 0.548492 16.9799 0.666151C17.0971 0.783713 17.1462 0.91363 17.1462 1.00209V4.67643C17.1462 4.74549 17.1157 4.818 17.0265 4.88765C16.9317 4.96156 16.7917 5.01151 16.6473 5.01151Z" fill="#31456A" stroke="#31456A"/>
+					</svg>
+					
+			</button>
+            <button class="main__footer-mob-btn blue">
+				<img src="img/bell.svg" alt="">
+			</button>
+            <button class="main__footer-mob-btn">
+				<svg width="21" height="21" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M11.6169 11.6184V1" stroke="#31456A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M20.8133 6.30914L2.42163 16.9276" stroke="#31456A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M1.17707 13.5596C0.717326 11.0716 1.15966 8.50116 2.42463 6.30994C3.6896 4.11872 5.69433 2.45026 8.0788 1.60419V9.57487L1.17707 13.5596Z" stroke="#31456A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M11.6169 1C13.4772 1.00034 15.3049 1.48945 16.9167 2.41834C18.5286 3.34723 19.8682 4.6833 20.8012 6.29276C21.7343 7.90221 22.2281 9.72857 22.2333 11.5889C22.2385 13.4493 21.7548 15.2784 20.8307 16.893C19.9066 18.5076 18.5745 19.8511 16.9678 20.7889C15.3611 21.7267 13.5362 22.226 11.6759 22.2367C9.81553 22.2474 7.98504 21.7691 6.36769 20.8498C4.75035 19.9304 3.40291 18.6023 2.46033 16.9984" stroke="#31456A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+			</button>
+            <button class="main__footer-mob-btn user-drop-open">
+				<svg width="20" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M18.7766 20H3.22344C2.38632 20 1.76817 19.1723 2.0839 18.4111C3.54885 14.8914 6.99045 12.875 10.9994 12.875C15.0096 12.875 18.4512 14.8914 19.9161 18.4111C20.2318 19.1723 19.6137 20 18.7766 20Z" stroke="#31456A" stroke-width="2"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M6.1599 5.75C6.1599 3.13038 8.33131 1 10.9987 1C13.6673 1 15.8375 3.13038 15.8375 5.75C15.8375 8.36963 13.6673 10.5 10.9987 10.5C8.33131 10.5 6.1599 8.36963 6.1599 5.75Z" stroke="#31456A" stroke-width="2"/>
+					</svg>
+			</button>
+        </div>
+        <!-- footer-->
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__container">
+                    <div class="row">
+                        <div class="footer__col">
+                            <a class="footer__logo" href="#"> <img src="img/logo1.png" alt=""></a>
+                            <ul class="footer__list">
+                                <li> <a href="#">О сервисе</a></li>
+                                <li> <a href="#">Поиск</a></li>
+                                <li> <a href="#">Управление</a></li>
+                                <li> <a href="#">Аналитика</a></li>
+                                <li> <a href="#">Пользовательское<br>соглашение</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Контакты</div>
+                            <ul class="footer__list">
+                                <li> <a href="tel:+78432507227">+7 (843) 250-72-27</a></li>
+                                <li> <a href="mailto:support@startpack.ru">support@startpack.ru</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Мы в соц сетяц</div>
+                            <ul class="footer__list">
+                                <li> <a href="#">Twitter</a></li>
+                                <li> <a href="#">Facebook</a></li>
+                                <li> <a href="#">LinkedIn</a></li>
+                                <li> <a href="#">ВКонтакте</a></li>
+                                <li> <a href="#">Telegram</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title footer__title--nomar">Наше<br>приложение</div>
+                            <div class="footer__stores">
+                                <a href="#"><img src="img/googleplay.png" alt=""></a>
+                                <a href="#"><img src="img/appstore.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer-->
+    </div>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/jquery-ui.min.js">
+    </script>
+    <script src="js/libs/datepicker-ru.js">
+    </script>
+    <script src="js/libs/jquery.scrollbar.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
