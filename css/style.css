@@ -2145,6 +2145,10 @@ aside .sort__switch,
     display: -ms-flexbox
 }
 
+.calendar__card--active .calendar__card-hidden svg {
+    flex-shrink: 0;
+}
+
 .calendar__card--active .calendar__card-title {
     display: none;
 }
@@ -2899,7 +2903,7 @@ aside .sort__switch,
 .analitic__top-item p:first-child {
     font-weight: 600;
     font-size: 40px;
-    line-height: 21px;
+    line-height: 35px;
     color: #31456A;
 }
 
@@ -3037,7 +3041,7 @@ aside .sort__switch,
 }
 
 .chart2__top-item {
-    padding-bottom: 3px;
+    /* padding-bottom: 3px; */
     padding-right: 3px;
     padding-left: 3px;
     font-weight: 500;
@@ -3049,13 +3053,12 @@ aside .sort__switch,
 }
 
 .chart2__top-item:hover {
-    padding-bottom: 2px;
+    /* padding-bottom: 2px; */
     border-bottom: 1px solid #687890;
     cursor: pointer;
 }
 
 .chart2__top-item--active {
-    padding-bottom: 2px;
     border-bottom: 1px solid #687890;
     pointer-events: none;
 }
@@ -3306,7 +3309,7 @@ aside .sort__switch,
 }
 
 .filter__variant {
-    padding: 5px 28px 5px 10px;
+    padding: 5px 25px 5px 10px;
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
@@ -3316,6 +3319,10 @@ aside .sort__switch,
     color: #31456A;
     margin-bottom: 7px;
     cursor: pointer;
+}
+
+.filter__variant:not(:last-child) {
+    margin-right: 7px;
 }
 
 .analitic {
@@ -3536,6 +3543,8 @@ aside .sort__switch,
 
 .control__right {
     position: relative;
+    width: 331px;
+    flex-shrink: 0;
 }
 
 .control__title {
@@ -3614,6 +3623,12 @@ aside .sort__switch,
 }
 
 @media (max-width: 992px) {
+    .calendar__card--active .calendar__card-hidden svg {
+        width: 10px;
+    }
+    .calendar__card-hidden span {
+        font-size: 8px;
+    }
     .target__left {
         margin-top: 75px;
         font-size: 35px;
@@ -3907,6 +3922,12 @@ aside .sort__switch,
     .analitic__top-item:nth-child(2),
     .analitic__top-item:nth-child(5) {
         width: 89px;
+        margin-right: 0;
+    }
+    .analitic__top-item:nth-child(3),
+    .analitic__top-item:nth-child(6) {
+        width: 100px;
+        margin-left: 30px;
     }
     .analitic__top-item p:first-child {
         font-size: 35px;
@@ -5106,6 +5127,10 @@ aside .sort__switch,
     .wrapper {
         padding-left: 20px;
         padding-right: 20px;
+        overflow-y: scroll;
+    }
+    .calendar {
+        margin-bottom: 60px;
     }
     .card__title,
     .card__desc,
@@ -5751,7 +5776,7 @@ aside .sort__switch,
         font-size: 10px;
         line-height: 12px;
         position: absolute;
-        top: 28px;
+        top: 20px;
         left: 12px;
     }
     .calendar__card-num::after {
@@ -5766,6 +5791,7 @@ aside .sort__switch,
         background-color: inherit;
         position: relative;
         padding: 0;
+        bottom: 0;
     }
     .calendar__day-num {
         top: 2px;
