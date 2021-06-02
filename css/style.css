@@ -3622,17 +3622,17 @@ aside .sort__switch,
     .target__right img:first-child {
         width: 322px;
         right: unset;
-        left: 93px;
+        left: 55px;
     }
     .target__right img:nth-child(2) {
         width: 250px;
         right: unset;
-        left: 266px;
+        left: 230px;
         top: 175px;
     }
     .target__right img:nth-child(3) {
         width: 223px;
-        left: 185px;
+        left: 150px;
         top: 275px;
         right: unset;
     }
@@ -3641,7 +3641,8 @@ aside .sort__switch,
     }
     .right-line {
         height: 155px;
-        right: 380px;
+        right: unset;
+        left: 520px;
     }
     .center-line {
         height: 386px;
@@ -3652,7 +3653,7 @@ aside .sort__switch,
     .left-line {
         top: -130px;
         left: 0;
-        height: 460px;
+        height: 347px;
     }
     .research__items {
         position: absolute;
@@ -3661,6 +3662,26 @@ aside .sort__switch,
         left: 0;
         bottom: 20px;
     }
+    .research__left img {
+        width: 295px;
+    }
+    .research__right {
+        width: calc(100% - 325px);
+    }
+    .research__title {
+        font-size: 35px;
+        line-height: 43px;
+    }
+    .research-img {
+        width: 45px;
+        height: 45px;
+        right: 2px;
+        top: 60px;
+    }
+    .research-img svg {
+        width: 25px;
+        height: 24px;
+    }
     .research__item {
         width: 210px;
     }
@@ -3668,7 +3689,8 @@ aside .sort__switch,
         text-align: center;
     }
     .research {
-        padding-bottom: 170px;
+        padding-bottom: 140px;
+        padding-top: 30px;
     }
     .bottom-line {
         top: unset;
@@ -3680,13 +3702,24 @@ aside .sort__switch,
         padding-bottom: 174px;
     }
     .control__right {
-        margin-left: 35px;
+        /* margin-left: 35px; */
+    }
+    .control__left {
+        width: 358px;
+    }
+    .control__right img {
+        width: 295px;
+        margin-left: auto;
+        margin-right: 5px;
+        display: block;
     }
     .control__title {
-        width: 385px;
+        font-size: 35px;
+        line-height: 120%;
     }
     .control__right-title {
         text-align: right;
+        margin-right: 30px;
     }
     .control__items {
         position: absolute;
@@ -3751,20 +3784,26 @@ aside .sort__switch,
     .analitic2 .center-line {
         right: unset;
         height: 342px;
-        top: -115px;
-        left: 340px;
+        top: -155px;
+        left: 272px;
     }
     .analitic2 .bottom-line {
         width: 357px;
-        right: 0;
+        right: unset;
+        left: 350px;
+        bottom: -15px;
     }
     .analitic-line {
         height: 166px;
-        right: 50px;
-        top: 230px;
+        left: 660px;
+        right: unset;
+        top: 220px;
+    }
+    .analitic2 .research__item-title {
+        width: 330px;
     }
     .analitic2 .research__right {
-        width: calc(100% - 400px);
+        width: calc(100% - 380px);
     }
     .analitic2 .research__item-top {
         text-align: left;
@@ -4270,6 +4309,73 @@ aside .sort__switch,
 }
 
 @media (max-width: 767px) {
+    .target {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .target__left {
+        font-size: 25px;
+        line-height: 100%;
+        text-align: left;
+        margin-top: 24px;
+    }
+    .target__right img:first-child {
+        width: 200px;
+        left: 30px;
+    }
+    .analitic2 .research__item-title {
+        width: unset;
+    }
+    .research__left-title {
+        width: unset;
+    }
+    .research__left img {
+        width: unset;
+        width: 100%;
+    }
+    .target__right img:nth-child(2) {
+        width: 170px;
+        left: 130px;
+        top: 120px;
+    }
+    .control__right-title {
+        width: unset;
+    }
+    .target__right img:nth-child(3) {
+        width: 153px;
+        left: 75px;
+        top: 190px;
+    }
+    .control__left {
+        width: unset;
+    }
+    .research {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .research__item {
+        width: 80px;
+    }
+    .target__right {
+        width: unset;
+    }
+    .control__right img {
+        margin-left: 0;
+    }
+    .control__title {
+        width: 100%;
+        text-align: center;
+    }
+    .control__item {
+        width: 80px;
+    }
+    .control {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
     .chart1 {
         padding: 10px 20px;
         width: 100%;
