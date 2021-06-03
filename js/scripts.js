@@ -256,8 +256,7 @@ $(document).ready(function() {
 
 
 
-    // JQueryScrollbar
-    $('.scrollbar-inner').scrollbar();
+
 
     // Ползунок выбора фильтров
     function switchFilters() {
