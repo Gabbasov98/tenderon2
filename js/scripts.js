@@ -237,7 +237,7 @@ $(document).ready(function() {
         })
         // 
     $(".calendar-card__detail").click(function() {
-        if ($(window).width() >= 768) {
+        if ($(window).width() > 767) {
             $(this).parents(".calendar-card__footer").siblings(".card__drop--calendar2").slideToggle()
             $(this).toggleClass("calendar-card__detail--active")
         } else {
