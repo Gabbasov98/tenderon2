@@ -3586,6 +3586,7 @@ aside .sort__switch,
     font-size: 13px;
     line-height: 16px;
     color: #31456A;
+    text-align: left;
 }
 
 .control__right-title {
@@ -3594,7 +3595,7 @@ aside .sort__switch,
     line-height: 17px;
     color: #31456A;
     width: 303px;
-    margin-top: -20px;
+    margin-top: -10px;
     padding-left: 16px;
 }
 
@@ -3618,6 +3619,8 @@ aside .sort__switch,
 
 .analitic2 .research__item-title {
     margin-left: 10px;
+    position: relative;
+    z-index: 20;
 }
 
 .analitic-line {
@@ -3638,6 +3641,8 @@ aside .sort__switch,
     color: #31456A;
     width: 303px;
     padding-left: 16px;
+    position: relative;
+    z-index: 20;
 }
 
 @media (max-width: 992px) {
