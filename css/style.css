@@ -3431,7 +3431,8 @@ aside .sort__switch,
     position: absolute;
     background: #D3E0ED;
     right: 0;
-    top: 300px;
+    /* top: 300px; */
+    bottom: -30px;
 }
 
 .research__left {
@@ -3448,7 +3449,7 @@ aside .sort__switch,
 
 .research__title {
     font-weight: 600;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 55px;
     color: #31456A;
 }
@@ -3753,7 +3754,7 @@ aside .sort__switch,
         display: block;
     }
     .control__title {
-        font-size: 35px;
+        font-size: 34px;
         line-height: 120%;
     }
     .control__right-title {
@@ -3961,17 +3962,23 @@ aside .sort__switch,
     .analitic__top-item:first-child,
     .analitic__top-item:nth-child(4) {
         width: 197px;
+        margin-right: 0;
     }
     .analitic__top-item:nth-child(2),
     .analitic__top-item:nth-child(6) {
         width: 89px;
-        margin-right: auto;
-        margin-left: auto;
+        /* margin-right: auto; */
+        /* margin-left: auto; */
+        width: calc(50% - 120px);
+        margin-left: 20px;
+        margin-right: 0;
     }
     .analitic__top-item:nth-child(3),
     .analitic__top-item:nth-child(5) {
         width: 100px;
-        margin-left: auto;
+        /* margin-left: auto; */
+        margin-left: 20px;
+        width: calc(50% - 120px);
         margin-right: 0;
     }
     .analitic__top-item p:first-child {
@@ -4566,7 +4573,8 @@ aside .sort__switch,
         margin-right: auto;
     }
     .research__item {
-        width: 80px;
+        width: 33.33%;
+        text-align: center;
     }
     .research__item:last-child {
         margin-right: 0;
@@ -4626,7 +4634,7 @@ aside .sort__switch,
         position: static;
     }
     .control__item {
-        width: 80px;
+        width: 33.33%;
     }
     .analitic2 .research-img svg {
         width: 18px;
@@ -4736,7 +4744,7 @@ aside .sort__switch,
     }
     .chart3__body {
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
         margin-top: 0;
     }
@@ -4755,6 +4763,7 @@ aside .sort__switch,
     .chart3__graph {
         width: 90px;
         height: 90px;
+        margin-left: 70px;
     }
     .chart3__item span:nth-child(2) {
         font-size: 10px;
@@ -4829,7 +4838,7 @@ aside .sort__switch,
         flex-grow: 0;
         flex-shrink: 1;
         margin-left: 20px;
-        margin-right: auto;
+        margin-right: 0;
     }
     .chart4 {
         width: unset;
@@ -5463,6 +5472,9 @@ aside .sort__switch,
         top: 16px;
         left: 0;
     }
+    .analitic2 .bottom-line {
+        display: none;
+    }
     .card__name,
     .card__category {
         margin-right: 10px;
@@ -5521,6 +5533,7 @@ aside .sort__switch,
     }
     .footer {
         margin-top: 0;
+        display: none;
     }
     .main__footer-mob {
         display: -webkit-box;
