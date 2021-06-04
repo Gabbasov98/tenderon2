@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     // Клик на карточку календаря + модальное окно
     $(".calendar__card").click(function() {
-        if ($(window).width() > 767) {
+        if (window.innerWidth > 767) {
             $(".calendar__card").removeClass("calendar__card--active")
             $(this).addClass("calendar__card--active");
             $(".calendar__drop").show(300);
@@ -251,7 +251,9 @@ $(document).ready(function() {
         $(".modal-bg").hide();
     })
 
-
+    $(window).resize(function() {
+        console.log($(document).width())
+    })
 
 
 

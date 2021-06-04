@@ -2900,7 +2900,7 @@ aside .sort__switch,
 
 .analitic__top-row {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
 }
 
@@ -3636,13 +3636,17 @@ aside .sort__switch,
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    margin-top: -20px;
+    margin-top: -10px;
     margin-left: 10px;
     color: #31456A;
     width: 303px;
     padding-left: 16px;
     position: relative;
     z-index: 20;
+}
+
+.select-filters--active {
+    display: none;
 }
 
 @media (max-width: 992px) {
@@ -4060,10 +4064,10 @@ aside .sort__switch,
         padding-left: 7px;
         padding-right: 5px;
     }
-    .user__login svg {
+    /* .user__login svg {
         width: 11.7px;
         height: 12.8px;
-    }
+    } */
     .user__arrow {
         width: 11.4px;
         height: 11.4px;
@@ -4149,11 +4153,20 @@ aside .sort__switch,
         margin-right: 5px;
     }
     .user__drop {
-        max-width: 100%;
+        max-width: unset;
+        min-width: unset;
+        width: 150px;
     }
-    .user__drop ul {
+    .user__login span {
+        font-size: 16px;
+    }
+    .user__login>svg {
+        width: 11.73px;
+        height: 12.8px;
+    }
+    /* .user__drop ul {
         padding: 5px 0;
-    }
+    } */
     .sort__file {
         width: 20px;
         height: 20px;
@@ -4636,6 +4649,7 @@ aside .sort__switch,
         top: 0;
         font-size: 25px;
         line-height: 120%;
+        padding-right: 0;
     }
     .control__right {
         order: -1;
