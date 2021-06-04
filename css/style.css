@@ -4451,7 +4451,7 @@ aside .sort__switch,
     .analitic2 .research__items {
         width: 100%;
         margin-bottom: 35px;
-        margin-top: 33px;
+        margin-top: 60px;
     }
     .analitic2 .research__item-top {
         text-align: center;
@@ -4514,6 +4514,7 @@ aside .sort__switch,
         width: 64px;
         height: 1px;
         left: 10px;
+        display: none;
     }
     .target__right img:nth-child(2) {
         width: 170px;
@@ -4663,6 +4664,7 @@ aside .sort__switch,
     }
     .control__items {
         position: static;
+        margin-top: 80px;
     }
     .control__item {
         width: 33.33%;
@@ -5201,12 +5203,14 @@ aside .sort__switch,
         opacity: 1;
         display: none;
         z-index: 5;
+        width: 100%;
     }
     .user__drop ul {
         border-radius: 0px;
         padding: 0;
         padding-left: 20px;
         padding-right: 20px;
+        border-radius: 20px 20px 0px 0px;
     }
     .page {
         position: relative;
@@ -5232,8 +5236,18 @@ aside .sort__switch,
         padding-right: 20px;
         /* overflow-y: scroll; */
     }
+    .filters__periods {
+        max-width: 320px;
+    }
+    .filters__period {
+        width: 25%;
+        text-align: center;
+    }
     .calendar {
-        margin-bottom: 60px;
+        padding-bottom: 90px;
+    }
+    .btn {
+        border-radius: 5px;
     }
     .card__title,
     .card__desc,
@@ -5256,6 +5270,9 @@ aside .sort__switch,
     }
     .menu__list li {
         min-width: unset;
+    }
+    .filter__btn-group--mt100 {
+        margin-top: 100px;
     }
     .sidebar {
         left: 0;
