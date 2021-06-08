@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Навигация по страницам</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light-theme.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- header-->
+        <header class="header" id="header">
+            <div class="header__top">
+                <div class="wrapper">
+                    <a class="header__logo" href="home.html"><img src="img/logo.svg" alt=""></a>
+                    <!-- menu-->
+                    <div class="js-menu menu menu--right">
+                        <div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul class="menu__list">
+                                <li><a class="active" href="#">Поиск</a></li>
+                                <li><a href="#">Учавстчвую</a></li>
+                                <li><a href="#">Аналитика</a></li>
+                            </ul>
+                            <div class="menu__close" id="menu-close"></div>
+                        </nav>
+                        <div class="menu__over" id="menu-over"></div>
+                    </div>
+                    <!-- /menu-->
+                    <!-- user-->
+                    <div class="user">
+                        <a class="user__notify active" href="#"><img src="img/bell.svg" alt=""></a>
+                        <div class="user__login"><img src="img/user.svg" alt=""><span>Никнейм</span>
+                            <div class="user__arrow"> <img src="img/arrow.svg" alt=""></div>
+                            <div class="user__drop">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="user__drop-icon"><img src="img/user.svg" alt=""></div><span>Профиль</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="user__drop-icon"><img src="img/flag.svg" alt=""></div><span>Избранное</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="user__drop-icon"><img src="img/out.svg" alt=""></div><span>Выход</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--	/user-->
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="wrapper">
+                    <!-- menu-->
+                    <div class="js-menu menu menu--right">
+                        <div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                        <nav class="menu__nav">
+                            <ul class="menu__list menu__list--b">
+                                <li><a class="active" href="#">Текущие</a></li>
+                                <li><a href="#">Контракт</a></li>
+                                <li><a href="#">Архивные</a></li>
+                                <li><a href="#">Журнал</a></li>
+                            </ul>
+                            <div class="menu__close" id="menu-close"></div>
+                        </nav>
+                        <div class="menu__over" id="menu-over"></div>
+                    </div>
+                    <!-- /menu-->
+                </div>
+            </div>
+        </header>
+        <!-- /header-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="subtitle">Навигация по страницам</div>
+                <ul>
+                    <li> <a href="search.html" target="_blank">Поиск</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="analitic.html" target="_blank">Аналитика</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="calendar.html" target="_blank">Календарь</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="calendar-day.html" target="_blank">Календарь детальнее</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="index.html" target="_blank">Главная</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer-->
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__container">
+                    <div class="row">
+                        <div class="footer__col">
+                            <a class="footer__logo" href="#"> <img src="img/logo.svg" alt=""></a>
+                            <ul class="footer__list">
+                                <li> <a href="#">О сервисе</a></li>
+                                <li> <a href="#">Поиск</a></li>
+                                <li> <a href="#">Управление</a></li>
+                                <li> <a href="#">Аналитика</a></li>
+                                <li> <a href="#">Пользовательское<br>соглашение</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Контакты</div>
+                            <ul class="footer__list">
+                                <li> <a href="tel:+78432507227">+7 (843) 250-72-27</a></li>
+                                <li> <a href="mailto:support@startpack.ru">support@startpack.ru</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Мы в соц сетяц</div>
+                            <ul class="footer__list">
+                                <li> <a href="#">Twitter</a></li>
+                                <li> <a href="#">Facebook</a></li>
+                                <li> <a href="#">LinkedIn</a></li>
+                                <li> <a href="#">ВКонтакте</a></li>
+                                <li> <a href="#">Telegram</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title footer__title--nomar">Наше<br>приложение</div>
+                            <div class="footer__stores">
+                                <a href="#"><img src="img/googleplay.png" alt=""></a>
+                                <a href="#"><img src="img/appstore.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer-->
+    </div>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

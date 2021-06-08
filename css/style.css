@@ -618,6 +618,10 @@ body.lock {
     transition: 0.3s;
 }
 
+.menu__list a.active {
+    pointer-events: none;
+}
+
 .menu__list a:hover:after,
 .menu__list a.active:after {
     opacity: 1;
@@ -3367,21 +3371,21 @@ aside .sort__switch,
     width: 50%;
 }
 
-.target__right img:first-child {
+.target__right a:first-child svg {
     position: absolute;
     right: 91px;
     top: 35px;
     display: block;
 }
 
-.target__right img:nth-child(2) {
+.target__right a:nth-child(2) svg {
     position: absolute;
     right: 1px;
     top: 160px;
     display: block;
 }
 
-.target__right img:nth-child(3) {
+.target__right a:nth-child(3) svg {
     position: absolute;
     top: 250px;
     right: 100px;
@@ -3661,19 +3665,22 @@ aside .sort__switch,
         font-size: 35px;
         line-height: 43px;
     }
-    .target__right img:first-child {
+    .target__right a:first-child svg {
         width: 322px;
+        height: 322px;
         right: unset;
         left: 55px;
     }
-    .target__right img:nth-child(2) {
+    .target__right a:nth-child(2) svg {
         width: 250px;
+        height: 250px;
         right: unset;
         left: 230px;
         top: 175px;
     }
-    .target__right img:nth-child(3) {
+    .target__right a:nth-child(3) svg {
         width: 223px;
+        height: 223px;
         left: 150px;
         top: 275px;
         right: unset;
@@ -4425,8 +4432,9 @@ aside .sort__switch,
         text-align: left;
         margin-top: 24px;
     }
-    .target__right img:first-child {
+    .target__right a:first-child svg {
         width: 200px;
+        height: 200px;
         left: 20px;
     }
     .analitic2 .top-line {
@@ -4516,8 +4524,9 @@ aside .sort__switch,
         left: 10px;
         display: none;
     }
-    .target__right img:nth-child(2) {
+    .target__right a:nth-child(2) svg {
         width: 170px;
+        height: 170px;
         left: 120px;
         top: 120px;
     }
@@ -4530,8 +4539,9 @@ aside .sort__switch,
         line-height: 16px;
         text-align: center;
     }
-    .target__right img:nth-child(3) {
+    .target__right a:nth-child(3) svg {
         width: 153px;
+        height: 153px;
         left: 65px;
         top: 190px;
     }

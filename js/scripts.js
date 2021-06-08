@@ -1,8 +1,3 @@
-//  Ivan Eremeev - 2020
-//  Skype: ivan.eremeev_1
-//  Telegram: IvanMessage
-//  Email: ivan.frontcoder@gmail.com
-
 $(document).ready(function() {
     $("  .main__footer-mob-btn.user-drop-open").click(function() {
         $(".footer .user__drop").css("display", "block");
@@ -88,15 +83,6 @@ $(document).ready(function() {
         breakSm = 769,
         breakXs = 500;
 
-    // Подключение настроек плагинов. Использовать "//=" перед строкой пути
-    // libs-settings/fancybox_settings.js
-    // libs-settings/slick_settings.js
-    // libs-settings/fullpage_settings.js
-    // libs-settings/tinyscrollbar-settings.js
-    // libs-settings/tooltipster-settings.js
-    // libs-settings/yandex-map-settings.js
-    // libs-settings/google-map-settings.js
-    // mailto-ajax.js
 
     // Запрет перехода по ссылкам с хэшем
     $('a[href="#"]').click(function(e) {
