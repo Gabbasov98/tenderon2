@@ -4481,6 +4481,7 @@ aside .sort__switch,
         background: #D3E0ED;
         bottom: -38px;
         left: 130px;
+        z-index: -1;
     }
     .analitic2 .bottom-line {
         left: 0;
