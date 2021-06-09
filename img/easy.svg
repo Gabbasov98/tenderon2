@@ -1,18 +1,5 @@
-<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<rect x="29.4375" y="7.98523" width="35.9742" height="35.9742" rx="8" transform="rotate(45 29.4375 7.98523)" fill="#46D0DB"/>
-<path d="M34.6077 39.997C34.6077 41.6639 32.6883 42.5993 31.3754 41.5723L29.469 40.081C28.745 39.5146 27.7282 39.5147 27.0043 40.0812L25.0997 41.5715C23.7868 42.5987 21.8672 41.6634 21.8672 39.9964V25.1618C21.8672 24.8975 21.9631 24.6439 22.1337 24.457C22.3044 24.2701 22.5359 24.165 22.7772 24.165H33.6976C33.939 24.165 34.1705 24.2701 34.3411 24.457C34.5118 24.6439 34.6077 24.8975 34.6077 25.1618V39.997Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24.2305 21.6588H36.0609C36.3023 21.6588 36.5337 21.7638 36.7044 21.9508C36.8751 22.1377 36.9709 22.3912 36.9709 22.6556V41.5945" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<filter id="filter0_d" x="0" y="2.98523" width="66.8752" height="66.8752" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dx="4" dy="3"/>
-<feGaussianBlur stdDeviation="4"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-</defs>
+<svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="25.4375" y="0.985229" width="35.9742" height="35.9742" rx="8" transform="rotate(45 25.4375 0.985229)" fill="#46D0DB"/>
+<path d="M30.6077 32.997C30.6077 34.6639 28.6883 35.5993 27.3754 34.5723L25.469 33.081C24.745 32.5146 23.7282 32.5147 23.0043 33.0812L21.0997 34.5715C19.7868 35.5987 17.8672 34.6634 17.8672 32.9964V18.1618C17.8672 17.8975 17.9631 17.6439 18.1337 17.457C18.3044 17.2701 18.5359 17.165 18.7772 17.165H29.6976C29.939 17.165 30.1705 17.2701 30.3411 17.457C30.5118 17.6439 30.6077 17.8975 30.6077 18.1618V32.997Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.2305 14.6588H32.0609C32.3023 14.6588 32.5337 14.7638 32.7044 14.9508C32.8751 15.1377 32.9709 15.3912 32.9709 15.6556V34.5945" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

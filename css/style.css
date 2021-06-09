@@ -219,6 +219,7 @@ body {
     min-width: 319px;
     font-family: 'Gilroy', sans-serif;
     font-size: 13px;
+    background: #E5E5E5;
     /* min-width: 1000px; */
 }
 
@@ -3491,6 +3492,10 @@ aside .sort__switch,
     width: 156px;
 }
 
+.research__item-top svg {
+    filter: drop-shadow(4px 3px 8px rgba(0, 0, 0, 0.25));
+}
+
 .research__item-title {
     font-weight: 500;
     font-size: 13px;
@@ -3582,6 +3587,10 @@ aside .sort__switch,
 .control__item {
     width: 155px;
     margin-right: 20px;
+}
+
+.control__item-top svg {
+    filter: drop-shadow(4px 3px 8px rgba(0, 0, 0, 0.25));
 }
 
 .control__item-title {
@@ -5235,6 +5244,9 @@ aside .sort__switch,
         box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48);
         border-radius: 44px;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .main__footer-mob-btn.blue svg {
         fill: #46D0DB;

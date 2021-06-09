@@ -237,9 +237,7 @@ $(document).ready(function() {
         $(".modal-bg").hide();
     })
 
-    $(window).resize(function() {
-        console.log($(document).width())
-    })
+
 
 
 
@@ -318,6 +316,13 @@ $(document).ready(function() {
     $("#amount1").val($("#slider").slider("values", 0) + ' ₽');
     $("#amount2").val($("#slider").slider("values", 1) + ' ₽');
 
+    $("body").on("click", ".link", function(event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 1500);
 
+
+    });
 
 });

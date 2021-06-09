@@ -1,22 +1,9 @@
-<svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<rect x="29.4375" y="7.98535" width="35.9742" height="35.9742" rx="8" transform="rotate(45 29.4375 7.98535)" fill="#46D0DB"/>
-<path d="M31.8927 37.0607H18.5312" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M42.3404 37.0607L37.5 37.0607" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M34.5152 39.9999C35.9647 39.9999 37.1398 38.7936 37.1398 37.3056C37.1398 35.8175 35.9647 34.6112 34.5152 34.6112C33.0657 34.6112 31.8906 35.8175 31.8906 37.3056C31.8906 38.7936 33.0657 39.9999 34.5152 39.9999Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23.7804 28.2427H18.5312" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M42.5 28.2427H29.0312" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M26.4019 31.182C27.8514 31.182 29.0264 29.9757 29.0264 28.4877C29.0264 26.9996 27.8514 25.7933 26.4019 25.7933C24.9524 25.7933 23.7773 26.9996 23.7773 28.4877C23.7773 29.9757 24.9524 31.182 26.4019 31.182Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<filter id="filter0_d" x="0" y="2.98535" width="66.8752" height="66.8752" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dx="4" dy="3"/>
-<feGaussianBlur stdDeviation="4"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-</defs>
+<svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="25.4375" y="0.985352" width="35.9742" height="35.9742" rx="8" transform="rotate(45 25.4375 0.985352)" fill="#46D0DB"/>
+<path d="M27.8927 30.0607H14.5312" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.3404 30.0607L33.5 30.0607" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.5152 32.9999C31.9647 32.9999 33.1398 31.7936 33.1398 30.3056C33.1398 28.8175 31.9647 27.6112 30.5152 27.6112C29.0657 27.6112 27.8906 28.8175 27.8906 30.3056C27.8906 31.7936 29.0657 32.9999 30.5152 32.9999Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.7804 21.2427H14.5312" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.5 21.2427H25.0312" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.4019 24.182C23.8514 24.182 25.0264 22.9757 25.0264 21.4877C25.0264 19.9996 23.8514 18.7933 22.4019 18.7933C20.9524 18.7933 19.7773 19.9996 19.7773 21.4877C19.7773 22.9757 20.9524 24.182 22.4019 24.182Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
