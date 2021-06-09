@@ -3663,8 +3663,19 @@ aside .sort__switch,
 }
 
 @media (max-width: 992px) {
+    .calendar__card-body {
+        margin-top: 2px;
+    }
+    .calendar__card {
+        padding: 6px 6px;
+        bottom: 6px;
+    }
+    .calendar__card-footer {
+        margin-top: 3px;
+    }
     .calendar__card--active .calendar__card-hidden svg {
         width: 10px;
+        height: 10px;
     }
     .calendar__card-hidden span {
         font-size: 8px;
@@ -4503,6 +4514,7 @@ aside .sort__switch,
     .analitic2 .research__item-title {
         width: unset;
         text-align: center;
+        z-index: 1;
     }
     .research__left-title {
         width: 100%;
